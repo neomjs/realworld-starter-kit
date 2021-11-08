@@ -1,0 +1,26 @@
+.neo-timefield-trigger {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+.neo-timefield-trigger:hover .neo-clock {
+  background-color: #1c60a0;
+}
+.neo-timefield-trigger .neo-clock {
+  background-color: #bbb;
+  background-image: none;
+  height: 16px;
+  width: 16px;
+}
+.neo-timefield-trigger .neo-clock .neo-hours,
+.neo-timefield-trigger .neo-clock .neo-minutes {
+  background-color: #fff;
+}
+.neo-timefield-trigger .neo-clock .neo-hours {
+  box-shadow: 0 -2em #fff, 0 -4em #fff;
+}
+.neo-timefield-trigger .neo-clock .neo-minutes {
+  box-shadow: 0 -3.4em #fff, 0 -6.8em #fff;
+}
+/*# sourceMappingURL=Time.css.map */

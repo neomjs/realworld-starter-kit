@@ -1,0 +1,12 @@
+.neo-examples-calendar-maincontainer .neo-header {
+  align-items: center;
+  background-color: #33343d;
+  color: #ccc;
+  display: flex;
+  padding: 0 10px;
+}
+.neo-examples-calendar-maincontainer .neo-header .fa {
+  font-size: 18px;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=MainContainer.css.map */

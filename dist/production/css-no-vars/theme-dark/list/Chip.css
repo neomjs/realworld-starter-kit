@@ -1,1 +1,1 @@
-.neo-chip-list{border:1px solid #ddd;overflow:auto}
+.neo-chip-list{border:1px solid #ddd;overflow:auto}.neo-chip-list .neo-list-item{padding:0}.neo-chip-list .neo-list-item.neo-selected{background-color:inherit;color:inherit}.neo-chip-list .neo-list-item.neo-selected .neo-chip{background-color:#5a7082;border-color:#5d83a7}.neo-chip-list .neo-list-item.neo-selected .neo-chip-close-button{color:#ddd}

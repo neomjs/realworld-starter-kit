@@ -4,10 +4,11 @@
 }
 
 .neo-docs-classdetails-headerpanel {
-  border-right: !important;
+  border-right: 1px solid #ddd !important;
 }
 
 .neo-docs-classdetails-headercomponent {
+  background-color: #fff;
   padding: 15px;
 }
 .neo-docs-classdetails-headercomponent .neo-docs-header-description {

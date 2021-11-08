@@ -1,0 +1,24 @@
+:root .neo-theme-dark {
+  --calendar-border-color: #3c3f41;
+  --event-blue-background-color: rgba(104, 169, 217, 0.1);
+  --event-blue-background-color-focus: rgba(104, 169, 217, 0.6);
+  --event-blue-color: #68a9d9;
+  --event-green-background-color: rgba(127, 255, 0, 0.1);
+  --event-green-background-color-focus: rgba(127, 255, 0, 0.6);
+  --event-green-color: chartreuse;
+  --event-orange-background-color: rgba(255, 100, 0, 0.1);
+  --event-orange-background-color-focus: rgba(255, 100, 0, 0.6);
+  --event-orange-color: #ff6400;
+  --event-pink-background-color: rgba(255, 20, 147, 0.1);
+  --event-pink-background-color-focus: rgba(255, 20, 147, 0.6);
+  --event-pink-color: deeppink;
+  --event-red-background-color: rgba(255, 0, 0, 0.1);
+  --event-red-background-color-focus: rgba(255, 0, 0, 0.6);
+  --event-red-color: red;
+  --event-yellow-background-color: rgba(255, 255, 0, 0.1);
+  --event-yellow-background-color-focus: rgba(255, 255, 0, 0.6);
+  --event-yellow-border-color: yellow;
+  --event-yellow-color: yellow;
+  --event-yellow-color-focus: #fff;
+}
+/*# sourceMappingURL=MainContainer.css.map */

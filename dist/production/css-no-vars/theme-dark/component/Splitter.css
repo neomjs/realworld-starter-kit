@@ -1,0 +1,1 @@
+.neo-splitter{background-color:#3c3f41;border:1px solid #323232;transition:background-color .3s ease-in-out}.neo-splitter:hover{background-color:#64b5f6}.neo-splitter.neo-horizontal{border-left:none;border-right:none;cursor:ns-resize}.neo-splitter.neo-vertical{border-bottom:none;border-top:none;cursor:ew-resize}.neo-dragproxy.neo-splitter{background-color:#64b5f6}

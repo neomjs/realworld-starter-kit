@@ -1,0 +1,149 @@
+.neo-calendar-maincontainer .neo-calendar-header-toolbar {
+  border-bottom: 1px solid #ddd;
+}
+.neo-calendar-maincontainer .neo-calendar-header-toolbar.neo-left {
+  padding-right: 0;
+}
+.neo-calendar-maincontainer .neo-calendar-sidebar {
+  border-right: 1px solid #ddd;
+  transition: margin-left 350ms ease-out;
+}
+.neo-calendar-maincontainer .neo-dateselector .neo-dateselector-content {
+  border-right: 0;
+}
+.neo-calendar-maincontainer .neo-dateselector .neo-dateselector-header {
+  border-right: 0;
+  border-top: 0;
+}
+
+.neo-button.neo-red:hover {
+  border-color: red;
+}
+.neo-button.neo-red .neo-button-glyph {
+  color: red;
+}
+.neo-button.neo-red .neo-button-text {
+  color: red;
+}
+
+.neo-event {
+  transition: background-color 0.15s ease-out, border-color 0.15s ease-out, color 0.15s ease-out;
+}
+.neo-event.neo-blue {
+  background-color: rgba(0, 80, 181, 0.1);
+  border-left: 2px solid #0050b5;
+  color: #0050b5;
+}
+.neo-event.neo-blue.neo-focus {
+  background-color: rgba(0, 80, 181, 0.6);
+}
+.neo-event.neo-blue .neo-resizable {
+  color: #0050b5;
+}
+.neo-event.neo-green {
+  background-color: rgba(0, 128, 0, 0.1);
+  border-left: 2px solid green;
+  color: green;
+}
+.neo-event.neo-green.neo-focus {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+.neo-event.neo-green .neo-resizable {
+  color: green;
+}
+.neo-event.neo-orange {
+  background-color: rgba(255, 100, 0, 0.1);
+  border-left: 2px solid #ff6400;
+  color: #ff6400;
+}
+.neo-event.neo-orange.neo-focus {
+  background-color: rgba(255, 100, 0, 0.6);
+}
+.neo-event.neo-orange .neo-resizable {
+  color: #ff6400;
+}
+.neo-event.neo-pink {
+  background-color: rgba(255, 20, 147, 0.1);
+  border-left: 2px solid deeppink;
+  color: deeppink;
+}
+.neo-event.neo-pink.neo-focus {
+  background-color: rgba(255, 20, 147, 0.6);
+}
+.neo-event.neo-pink .neo-resizable {
+  color: deeppink;
+}
+.neo-event.neo-red {
+  background-color: rgba(255, 0, 0, 0.1);
+  border-left: 2px solid red;
+  color: red;
+}
+.neo-event.neo-red.neo-focus {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+.neo-event.neo-red .neo-resizable {
+  color: red;
+}
+.neo-event.neo-yellow {
+  background-color: rgba(255, 204, 0, 0.1);
+  border-left: 2px solid #ffcc00;
+  color: #aaaa00;
+}
+.neo-event.neo-yellow.neo-focus {
+  background-color: rgba(255, 204, 0, 0.6);
+  color: #aaaa00 !important;
+}
+.neo-event.neo-yellow.neo-focus .neo-resizable {
+  color: #aaaa00 !important;
+}
+.neo-event.neo-yellow .neo-resizable {
+  color: #aaaa00;
+}
+
+.neo-event-border-all-sides .neo-event {
+  border-radius: 3px;
+}
+.neo-event-border-all-sides .neo-event.neo-blue {
+  border: 1px solid #0050b5;
+}
+.neo-event-border-all-sides .neo-event.neo-green {
+  border: 1px solid green;
+}
+.neo-event-border-all-sides .neo-event.neo-orange {
+  border: 1px solid #ff6400;
+}
+.neo-event-border-all-sides .neo-event.neo-pink {
+  border: 1px solid deeppink;
+}
+.neo-event-border-all-sides .neo-event.neo-red {
+  border: 1px solid red;
+}
+.neo-event-border-all-sides .neo-event.neo-yellow {
+  border: 1px solid #ffcc00;
+}
+
+.neo-event-border-right .neo-event.neo-blue {
+  border-left: 0;
+  border-right: 2px solid #0050b5;
+}
+.neo-event-border-right .neo-event.neo-green {
+  border-left: 0;
+  border-right: 2px solid green;
+}
+.neo-event-border-right .neo-event.neo-orange {
+  border-left: 0;
+  border-right: 2px solid #ff6400;
+}
+.neo-event-border-right .neo-event.neo-pink {
+  border-left: 0;
+  border-right: 2px solid deeppink;
+}
+.neo-event-border-right .neo-event.neo-red {
+  border-left: 0;
+  border-right: 2px solid red;
+}
+.neo-event-border-right .neo-event.neo-yellow {
+  border-left: 0;
+  border-right: 2px solid #ffcc00;
+}
+/*# sourceMappingURL=MainContainer.css.map */

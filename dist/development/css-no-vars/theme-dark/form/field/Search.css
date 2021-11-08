@@ -1,7 +1,6 @@
-@charset "UTF-8";
 .neo-searchfield::before {
   color: #bbb;
-  content: "";
+  content: "\f002";
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   font-size: 14px;

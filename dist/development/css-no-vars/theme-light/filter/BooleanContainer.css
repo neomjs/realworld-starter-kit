@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .neo-filter-booleancontainer {
   height: 37px;
 }
@@ -9,7 +8,7 @@
   width: 18px;
 }
 .neo-filter-booleancontainer .neo-radiofield .neo-radio-input:checked::after {
-  content: "";
+  content: "\f192";
   font-weight: 400;
 }
 .neo-filter-booleancontainer .neo-radiofield .neo-radio-value-label {

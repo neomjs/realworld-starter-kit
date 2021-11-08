@@ -1,0 +1,10 @@
+.neo-menu {
+  border: 1px solid var(--menu-border-color);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.neo-menu .neo-menu-list {
+  border: none;
+}
+/*# sourceMappingURL=Panel.css.map */

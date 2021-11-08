@@ -32,6 +32,7 @@
   border-right-color: transparent;
 }
 .neo-table-container td.neo-locked, .neo-table-container th.neo-locked {
+  position: -webkit-sticky;
   position: sticky;
 }
 .neo-table-container td {
@@ -52,6 +53,7 @@
   border-right: 1px solid var(--table-container-border-color);
   border-top: 1px solid var(--table-container-border-color);
   padding: 0;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;

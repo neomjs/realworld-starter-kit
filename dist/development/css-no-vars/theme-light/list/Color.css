@@ -1,0 +1,11 @@
+.neo-color-list .neo-icon {
+  font-size: 1.7em;
+  margin-left: 0.1em;
+  margin-right: 0.2em;
+}
+.neo-color-list .neo-list-item {
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+/*# sourceMappingURL=Color.css.map */

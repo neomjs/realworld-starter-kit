@@ -106,6 +106,7 @@
   margin-bottom: 3px;
 }
 .neo-textfield .neo-input-wrapper {
+  align-items: stretch;
   background-color: var(--textfield-input-background-color);
   border: 1px solid var(--textfield-border-color);
   border-radius: var(--textfield-border-radius);

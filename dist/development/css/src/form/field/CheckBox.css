@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .neo-checkboxfield .neo-checkbox-input {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -6,12 +5,12 @@
 }
 .neo-checkboxfield .neo-checkbox-input:checked::after {
   color: var(--checkboxfield-checked-color);
-  content: "";
+  content: "\f00c";
   font-weight: 900;
 }
 .neo-checkboxfield .neo-checkbox-input::after {
   color: var(--checkboxfield-color);
-  content: "";
+  content: "\f0c8";
   cursor: pointer;
   display: inline-block;
   font-family: "Font Awesome 5 Free";
@@ -24,8 +23,16 @@
 .neo-checkboxfield .neo-checkbox-label {
   color: var(--textfield-label-color);
   display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .neo-checkboxfield .neo-checkbox-value-label {
   color: var(--textfield-label-color);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=CheckBox.css.map */

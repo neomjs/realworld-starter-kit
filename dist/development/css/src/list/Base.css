@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .neo-list-container {
   background-color: var(--list-container-background-color);
   border: var(--list-container-border);
@@ -21,13 +20,13 @@
 }
 .neo-list.neo-use-checkicons .neo-list-item:before {
   color: var(--list-item-glyph-color);
-  content: "";
+  content: "\f0c8";
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   width: 25px;
 }
 .neo-list.neo-use-checkicons .neo-list-item.neo-selected:before {
-  content: "";
+  content: "\f00c";
   font-weight: 900;
 }
 .neo-list .neo-list-item {

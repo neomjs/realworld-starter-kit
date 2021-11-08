@@ -1,6 +1,8 @@
-@charset "UTF-8";
 .docs-content-tabcontainer {
   overflow: hidden;
+}
+.docs-content-tabcontainer .docs-tab-header-toolbar {
+  background-color: #fff;
 }
 .docs-content-tabcontainer .docs-tab-header-toolbar .neo-button-glyph {
   pointer-events: all;
@@ -8,10 +10,11 @@
   width: 16px;
 }
 .docs-content-tabcontainer .docs-tab-header-toolbar .neo-button-glyph:hover {
+  color: red;
   cursor: pointer;
 }
 .docs-content-tabcontainer .docs-tab-header-toolbar .neo-button-glyph:hover::before {
-  content: "" !important;
+  content: "\f057" !important;
 }
 .docs-content-tabcontainer .neo-docs-tab-content-container {
   border: 0;

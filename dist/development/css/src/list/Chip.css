@@ -2,4 +2,18 @@
   border: 1px solid #ddd;
   overflow: auto;
 }
+.neo-chip-list .neo-list-item {
+  padding: 0;
+}
+.neo-chip-list .neo-list-item.neo-selected {
+  background-color: inherit;
+  color: inherit;
+}
+.neo-chip-list .neo-list-item.neo-selected .neo-chip {
+  background-color: var(--list-item-background-color-selected);
+  border-color: var(--chip-border-color-focus);
+}
+.neo-chip-list .neo-list-item.neo-selected .neo-chip-close-button {
+  color: var(--chip-close-button-color-hover);
+}
 /*# sourceMappingURL=Chip.css.map */

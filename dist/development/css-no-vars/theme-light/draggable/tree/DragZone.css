@@ -1,8 +1,7 @@
-@charset "UTF-8";
 .neo-dragproxy.neo-tree-list .neo-list .neo-list-item {
   margin-right: 0;
 }
 .neo-dragproxy.neo-tree-list .neo-list-folder.neo-folder-open .neo-list-item-content:before {
-  content: "" !important;
+  content: "\f07b" !important;
 }
 /*# sourceMappingURL=DragZone.css.map */

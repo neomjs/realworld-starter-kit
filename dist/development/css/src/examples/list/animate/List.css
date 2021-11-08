@@ -1,0 +1,25 @@
+.neo-examples-list-animate .neo-is-online {
+  background-color: green;
+  border-radius: 50%;
+  height: 0.7em;
+  margin-top: 0.5em;
+  width: 0.7em;
+}
+.neo-examples-list-animate .neo-lastname {
+  color: #1c60a0;
+  font-weight: bold;
+}
+.neo-examples-list-animate .neo-list-item {
+  background-color: lavender;
+  border: 1px solid #1c60a0;
+  border-radius: 6px;
+  opacity: 0.9;
+  transition: transform 0.5s ease-in-out;
+}
+.neo-examples-list-animate .neo-list-item-content {
+  display: flex;
+}
+.neo-examples-list-animate .neo-list-item-text {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=List.css.map */

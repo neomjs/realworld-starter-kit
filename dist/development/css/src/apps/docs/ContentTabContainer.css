@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .docs-content-tabcontainer {
   overflow: hidden;
 }
@@ -15,7 +14,7 @@
   cursor: pointer;
 }
 .docs-content-tabcontainer .docs-tab-header-toolbar .neo-button-glyph:hover::before {
-  content: "" !important;
+  content: "\f057" !important;
 }
 .docs-content-tabcontainer .neo-docs-tab-content-container {
   border: 0;

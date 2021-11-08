@@ -28,10 +28,10 @@
 }
 .neo-numberfield .neo-spin-button.neo-up {
   border-bottom: 1px solid #ddd;
-  height: calc(50% + .5px);
+  height: calc(50% + 0.5px);
 }
 .neo-numberfield .neo-spin-button.neo-down {
-  height: calc(50% - .5px);
+  height: calc(50% - 0.5px);
   line-height: 13px;
 }
 .neo-numberfield .neo-spin-button:hover {

@@ -1,0 +1,23 @@
+.neo-splitter {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease-in-out;
+}
+.neo-splitter:hover {
+  background-color: #5d83a7;
+}
+.neo-splitter.neo-horizontal {
+  border-left: none;
+  border-right: none;
+  cursor: ns-resize;
+}
+.neo-splitter.neo-vertical {
+  border-bottom: none;
+  border-top: none;
+  cursor: ew-resize;
+}
+
+.neo-dragproxy.neo-splitter {
+  background-color: #5d83a7;
+}
+/*# sourceMappingURL=Splitter.css.map */

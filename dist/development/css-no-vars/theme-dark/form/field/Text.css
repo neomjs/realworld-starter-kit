@@ -106,6 +106,7 @@
   margin-bottom: 3px;
 }
 .neo-textfield .neo-input-wrapper {
+  align-items: stretch;
   background-color: #2b2b2b;
   border: 1px solid #424242;
   border-radius: 0;

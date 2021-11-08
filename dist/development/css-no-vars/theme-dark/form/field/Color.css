@@ -1,0 +1,11 @@
+.neo-colorfield.label-inline .neo-label-wrapper .neo-left-border {
+  width: 2em;
+}
+.neo-colorfield.label-inline .neo-textfield-input {
+  padding-left: 0.2em;
+}
+.neo-colorfield .neo-color {
+  transition: background-color 0.2s ease-out;
+  width: 1.7em;
+}
+/*# sourceMappingURL=Color.css.map */

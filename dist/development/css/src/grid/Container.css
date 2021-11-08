@@ -36,17 +36,20 @@
   background-color: #323232;
 }
 .neo-grid-container .neo-grid-header-cell {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 5;
 }
 .neo-grid-container .neo-grid-header-cell:nth-child(1) {
+  position: -webkit-sticky;
   position: sticky;
   left: 0;
   top: 0;
   z-index: 200 !important;
 }
 .neo-grid-container .neo-grid-cell:nth-child(1) {
+  position: -webkit-sticky;
   position: sticky;
   left: 0;
   z-index: 20;
@@ -61,6 +64,7 @@
   border-right-width: 0;
 }
 .neo-grid-container .neo-grid-cell.neo-locked, .neo-grid-container .neo-grid-header-cell.neo-locked {
+  position: -webkit-sticky;
   position: sticky;
   left: 0;
 }

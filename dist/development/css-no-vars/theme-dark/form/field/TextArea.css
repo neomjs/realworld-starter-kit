@@ -1,2 +1,7 @@
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJUZXh0QXJlYS5jc3MifQ== */
+.neo-textarea {
+  align-items: stretch;
+}
+.neo-textarea .neo-field-trigger {
+  border-bottom: 1px solid var(--textfield-border-color);
+}
+/*# sourceMappingURL=TextArea.css.map */

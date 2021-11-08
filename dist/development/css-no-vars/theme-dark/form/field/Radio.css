@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .neo-radiofield .neo-radio-input {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -6,12 +5,12 @@
 }
 .neo-radiofield .neo-radio-input:checked::after {
   color: #64B5F6;
-  content: "";
+  content: "\f00c";
   font-weight: 900;
 }
 .neo-radiofield .neo-radio-input::after {
   color: #eee;
-  content: "";
+  content: "\f111";
   cursor: pointer;
   display: inline-block;
   font-family: "Font Awesome 5 Free";

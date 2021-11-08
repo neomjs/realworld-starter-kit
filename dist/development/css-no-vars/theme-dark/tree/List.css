@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .neo-tree-list {
   border: none;
   color: #bbb;
@@ -9,14 +8,14 @@
   display: none;
 }
 .neo-tree-list .neo-list-folder .neo-list-item-content:before {
-  content: "" !important;
+  content: "\f07b" !important;
   margin-left: 0;
 }
 .neo-tree-list .neo-list-folder.neo-folder-open + .neo-list {
   display: block;
 }
 .neo-tree-list .neo-list-folder.neo-folder-open .neo-list-item-content:before {
-  content: "" !important;
+  content: "\f07c" !important;
   margin-left: 0;
 }
 .neo-tree-list .neo-list-container {
@@ -27,14 +26,14 @@
 }
 .neo-tree-list .neo-list-item .neo-list-item-content:before {
   color: inherit;
-  content: "";
+  content: "\f1f9";
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   width: 25px;
 }
 .neo-tree-list .neo-list-item-leaf-singleton .neo-list-item-content:before {
-  content: "";
+  content: "\f35a";
 }
 .neo-tree-list .neo-treelist-menu-item {
   cursor: pointer;
@@ -58,12 +57,12 @@
   top: 5px;
 }
 .neo-tree-list .neo-treelist-collapse-all-icon .neo-treelist-menu-item-content:before {
-  content: "";
+  content: "\f07b";
 }
 .neo-tree-list .neo-treelist-expand-all-icon {
   top: 30px;
 }
 .neo-tree-list .neo-treelist-expand-all-icon .neo-treelist-menu-item-content:before {
-  content: "";
+  content: "\f07c";
 }
 /*# sourceMappingURL=List.css.map */
