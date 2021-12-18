@@ -139,11 +139,10 @@ class Component extends BaseComponent {
     }}
 
     /**
-     *
      * @param {Object} config
      */
-    constructor(config) {
-        super(config);
+    construct(config) {
+        super.construct(config);
 
         let me           = this,
             domListeners = me.domListeners;
@@ -429,7 +428,6 @@ class Component extends BaseComponent {
     }
 
     /**
-     *
      * @param {Object} data
      */
     onDeleteButtonClick(data) {
@@ -437,7 +435,6 @@ class Component extends BaseComponent {
     }
 
     /**
-     *
      * @param {Object} data
      */
     onEditButtonClick(data) {
@@ -447,7 +444,6 @@ class Component extends BaseComponent {
     }
 
     /**
-     *
      * @param {Object} data
      */
     onFavoriteButtonClick(data) {
@@ -455,7 +451,6 @@ class Component extends BaseComponent {
     }
 
     /**
-     *
      * @param {Object} data
      */
     onFollowButtonClick(data) {
