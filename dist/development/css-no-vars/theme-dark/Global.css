@@ -1,5 +1,8 @@
 html, .neo-body-viewport {
+  align-items: center;
+  display: flex;
   height: 100%;
+  justify-content: center;
   overflow: hidden;
   width: 100%;
 }
@@ -39,7 +42,6 @@ html, .neo-body-viewport {
 .neo-unselectable {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 /*# sourceMappingURL=Global.css.map */

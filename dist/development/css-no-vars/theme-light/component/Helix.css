@@ -14,6 +14,9 @@
 .neo-helix:focus {
   outline: 0;
 }
+.neo-helix.neo-follow-selection .neo-helix-item {
+  transition: all 0.1s linear;
+}
 .neo-helix.neo-transition-100 .neo-helix-item {
   transition: all 0.1s ease-in-out !important;
 }
@@ -41,7 +44,6 @@
   transform-style: preserve-3d;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   -webkit-tap-highlight-color: transparent;
 }

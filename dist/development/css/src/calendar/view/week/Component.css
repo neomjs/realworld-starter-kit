@@ -90,7 +90,6 @@
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .neo-calendar-weekcomponent .neo-event-end-time {

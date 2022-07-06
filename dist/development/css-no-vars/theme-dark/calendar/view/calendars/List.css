@@ -16,22 +16,22 @@
   cursor: pointer;
 }
 .neo-calendars-list .neo-color-blue .neo-checkbox-input::after {
-  color: #68a9d9 !important;
+  color: rgb(104, 169, 217) !important;
 }
 .neo-calendars-list .neo-color-green .neo-checkbox-input::after {
-  color: chartreuse !important;
+  color: rgb(127, 255, 0) !important;
 }
 .neo-calendars-list .neo-color-orange .neo-checkbox-input::after {
-  color: #ff6400 !important;
+  color: rgb(255, 100, 0) !important;
 }
 .neo-calendars-list .neo-color-pink .neo-checkbox-input::after {
-  color: deeppink !important;
+  color: rgb(255, 20, 147) !important;
 }
 .neo-calendars-list .neo-color-red .neo-checkbox-input::after {
-  color: red !important;
+  color: rgb(255, 0, 0) !important;
 }
 .neo-calendars-list .neo-color-yellow .neo-checkbox-input::after {
-  color: yellow !important;
+  color: rgb(255, 255, 0) !important;
 }
 .neo-calendars-list .neo-list-item {
   align-items: center;

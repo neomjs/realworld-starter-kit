@@ -48,6 +48,7 @@
   transition-duration: 550ms;
 }
 .neo-gallery .neo-selected .neo-item-wrapper {
+  opacity: 0.95;
   transform: translate3d(0, 0, 180px) scale(1.5);
 }
 .neo-gallery .image-wrap.neo-selected img {

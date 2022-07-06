@@ -1,22 +1,25 @@
 {
     "name": "neo.mjs-realworld-example-app",
-    "version": "1.0.27",
+    "version": "1.0.28",
     "description": "neo.mjs: Real World example app",
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "https://github.com/neomjs/neomjs-realworld-example-app.git"
     },
     "scripts": {
-        "build-all": "node ./node_modules/neo.mjs/buildScripts/buildAll.js -n",
-        "build-all-questions": "node ./buildScripts/buildAll.js",
-        "build-my-apps": "node ./node_modules/neo.mjs/buildScripts/webpack/buildMyApps.js",
-        "build-themes": "node ./node_modules/neo.mjs/buildScripts/webpack/buildThemes.js",
-        "build-threads": "node ./node_modules/neo.mjs/buildScripts/webpack/buildThreads.js",
-        "copy-examples": "node ./buildScripts/copyExamples.js",
-        "create-app": "node ./node_modules/neo.mjs/buildScripts/createApp.js",
-        "generate-docs-json": "node ./node_modules/neo.mjs/buildScripts/docs/jsdocx.js",
-        "server-start": "webpack serve -c ./node_modules/neo.mjs/buildScripts/webpack/webpack.server.config.js --open",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build-all": "node ./node_modules/neo.mjs/buildScripts/buildAll.mjs -n",
+        "build-all-questions": "node ./buildScripts/buildAll.mjs",
+        "build-my-apps": "node ./node_modules/neo.mjs/buildScripts/webpack/buildMyApps.mjs",
+        "build-themes": "node ./node_modules/neo.mjs/buildScripts/webpack/buildThemes.mjs",
+        "build-threads": "node ./node_modules/neo.mjs/buildScripts/webpack/buildThreads.mjs",
+        "copy-examples": "node ./buildScripts/copyExamples.mjs",
+        "create-app": "node ./node_modules/neo.mjs/buildScripts/createApp.mjs",
+        "create-class": "node ./node_modules/neo.mjs/buildScripts/createClass.mjs",
+        "generate-docs-json": "node ./node_modules/neo.mjs/buildScripts/docs/jsdocx.mjs",
+        "server-start": "webpack serve -c ./node_modules/neo.mjs/buildScripts/webpack/webpack.server.config.mjs --open",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch-themes": "node ./buildScripts/watchThemes.mjs"
     },
     "keywords": [],
     "author": "Tobias Uhlig, Nils Dehl",
@@ -26,6 +29,9 @@
     },
     "homepage": "https://neomjs.github.io/pages/",
     "dependencies": {
-        "neo.mjs": "^3.0.0"
+        "neo.mjs": "^4.0.66"
+    },
+    "devDependencies": {
+        "siesta-lite": "5.5.2"
     }
 }

@@ -34,6 +34,7 @@
   width: 40px;
 }
 .neo-country-gallery .neo-selected .neo-item-wrapper {
+  opacity: 0.95;
   transform: translateZ(180px) scale(1.5);
   -webkit-box-reflect: unset !important;
 }
@@ -52,7 +53,6 @@
   padding: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .neo-country-gallery .neo-country-gallery-item .neo-item-header {

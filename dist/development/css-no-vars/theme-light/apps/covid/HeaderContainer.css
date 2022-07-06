@@ -33,7 +33,7 @@
 }
 .covid-header-container .covid-numberbox .covid-numberbox-title.active {
   background-color: rgba(100, 181, 246, 0.65);
-  border-left: 5px solid #64b5f6;
+  border-left: 5px solid rgb(100, 181, 246);
 }
 .covid-header-container .covid-numberbox .covid-numberbox-title.active:after {
   background-color: rgba(100, 181, 246, 0.65);
@@ -45,7 +45,7 @@
 }
 .covid-header-container .covid-numberbox .covid-numberbox-title.cases {
   background-color: rgba(187, 187, 187, 0.65);
-  border-left: 5px solid #bbbbbb;
+  border-left: 5px solid rgb(187, 187, 187);
 }
 .covid-header-container .covid-numberbox .covid-numberbox-title.cases:after {
   background-color: rgba(187, 187, 187, 0.65);
@@ -57,7 +57,7 @@
 }
 .covid-header-container .covid-numberbox .covid-numberbox-title.deaths {
   background-color: rgba(251, 103, 103, 0.65);
-  border-left: 5px solid #fb6767;
+  border-left: 5px solid rgb(251, 103, 103);
 }
 .covid-header-container .covid-numberbox .covid-numberbox-title.deaths:after {
   background-color: rgba(251, 103, 103, 0.65);
@@ -69,7 +69,7 @@
 }
 .covid-header-container .covid-numberbox .covid-numberbox-title.recovered {
   background-color: rgba(40, 218, 111, 0.65);
-  border-left: 5px solid #28da6f;
+  border-left: 5px solid rgb(40, 218, 111);
 }
 .covid-header-container .covid-numberbox .covid-numberbox-title.recovered:after {
   background-color: rgba(40, 218, 111, 0.65);

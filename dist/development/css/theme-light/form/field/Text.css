@@ -1,6 +1,7 @@
 :root .neo-theme-light {
   --textfield-border-color: #ddd;
   --textfield-border-color-active: #1c60a0;
+  --textfield-border-color-invalid: brown;
   --textfield-border-radius: 3px;
   --textfield-input-background-color: #fff;
   --textfield-input-color: #000;

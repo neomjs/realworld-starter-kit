@@ -25,14 +25,12 @@
   display: inline-block;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .neo-checkboxfield .neo-checkbox-value-label {
   color: #bbb;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 /*# sourceMappingURL=CheckBox.css.map */

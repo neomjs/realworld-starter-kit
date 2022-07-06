@@ -15,10 +15,8 @@
 
 .neo-dialog-wrapper {
   display: flex;
-  left: 50%;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 20;
   transition-duration: 200ms;
   transition-property: height, left, top, transform, width;
   transition-timing-function: ease-out;
@@ -38,6 +36,10 @@
   border: 1px solid #ddd;
   flex: 1 0 auto;
   position: relative;
+}
+.neo-dialog.neo-panel .neo-footer-toolbar {
+  border: none;
+  border-top: 1px solid #ddd;
 }
 .neo-dialog.neo-panel .neo-header-toolbar {
   border: none;
@@ -64,7 +66,6 @@
   user-drag: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   -webkit-user-drag: none;
 }
