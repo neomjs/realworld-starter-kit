@@ -13,7 +13,7 @@
   margin: 0;
   padding: 7px 10px 6px;
   white-space: nowrap;
-  width: 100%;
+  width: 100% !important;
   background-image: linear-gradient(#3c3f41, #323232);
 }
 .neo-table-header-button.neo-drag-over {
@@ -45,8 +45,26 @@
   pointer-events: none;
   transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
   will-change: opacity, transform;
+  z-index: 2;
+}
+.neo-table-header-button .neo-button-ripple {
+  background-color: #4a6987;
+  border-radius: 50%;
+  opacity: 0;
+  position: absolute;
+  transform: scale(4);
+}
+.neo-table-header-button .neo-button-ripple-wrapper {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .neo-table-header-button .neo-button-text {
   pointer-events: none;
+  z-index: 2;
 }
 /*# sourceMappingURL=Button.css.map */

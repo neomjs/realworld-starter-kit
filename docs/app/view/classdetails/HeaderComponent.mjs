@@ -6,7 +6,7 @@ import SourceViewComponent from './SourceViewComponent.mjs';
  * @extends Neo.component.Base
  */
 class HeaderComponent extends Component {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.classdetails.HeaderComponent'
          * @protected
@@ -37,13 +37,11 @@ class HeaderComponent extends Component {
         /**
          * @member {Object} _vdom
          */
-        _vdom: {
-            cn: [{
-                tag: 'span',
-                cls: ['neo-docs-header-text']
-            }]
-        }
-    }}
+        _vdom:
+        {cn: [
+            {tag: 'span', cls: ['neo-docs-header-text']}
+        ]}
+    }
 
     /**
      *
@@ -52,12 +50,11 @@ class HeaderComponent extends Component {
         super.onConstructed();
 
         let me         = this,
-            vdom      = me.vdom,
             className = me.record.className,
             store     = me.up('main-container').store,
             record    = store.find({$kind: className === 'Neo' ? 'module' : 'class', neoClassName: className})[0],
             i         = 0,
-            len       = record && record.tags && record.tags.length || 0,
+            len       = record?.tags?.length || 0,
             singleton = false;
 
         for (; i < len; i++) {
@@ -67,19 +64,19 @@ class HeaderComponent extends Component {
             }
         }
 
-        vdom.cn[0].innerHTML = singleton ? (className + ' → Singleton') : className;
+        me.vdom.cn[0].innerHTML = singleton ? (className + ' → Singleton') : className;
 
         if (record.description) {
-            vdom.cn.push({
+            me.vdom.cn.push({
                 cls      : ['neo-docs-header-description'],
                 innerHTML: record.description
             });
         }
 
-        me.vdom = vdom;
+        me.update();
     }
 }
 
 Neo.applyClassConfig(HeaderComponent);
 
-export {HeaderComponent as default};
+export default HeaderComponent;

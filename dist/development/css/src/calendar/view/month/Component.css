@@ -69,7 +69,6 @@
 .neo-calendar-monthcomponent .neo-c-m-scrollcontainer .neo-month-header {
   font-size: 1.6em;
   height: 0;
-  position: -webkit-sticky;
   position: sticky;
   top: -2.3em;
   width: 5.8em;
@@ -78,7 +77,6 @@
 .neo-calendar-monthcomponent .neo-c-m-scrollcontainer .neo-month-header-content {
   background-color: var(--c-m-background-color);
   color: var(--c-m-year-color);
-  min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
   opacity: 0;

@@ -1,11 +1,22 @@
-.neo-pickerfield .neo-picker-container {
+.neo-pickerfield.neo-not-editable {
+  cursor: pointer;
+}
+.neo-pickerfield.neo-not-editable .neo-textfield-input {
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.neo-picker-container {
   background-color: var(--pickerfield-container-background-color);
   border: var(--pickerfield-container-border);
   box-shadow: var(--pickerfield-container-box-shadow);
-  position: fixed;
-  z-index: 20;
+  position: absolute;
+  z-index: 200;
 }
-.neo-pickerfield .neo-picker-container:focus {
+.neo-picker-container:focus {
   outline: none;
 }
 /*# sourceMappingURL=Picker.css.map */

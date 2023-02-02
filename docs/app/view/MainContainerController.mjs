@@ -6,7 +6,7 @@ import NeoArray  from '../../../node_modules/neo.mjs/src/util/Array.mjs';
  * @extends Neo.controller.Component
  */
 class MainContainerController extends Component {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.MainContainerController'
          * @protected
@@ -17,7 +17,7 @@ class MainContainerController extends Component {
          * @protected
          */
         ntype: 'docs-maincontainer-controller'
-    }}
+    }
 
     /**
      *
@@ -107,12 +107,12 @@ class MainContainerController extends Component {
      */
     onHashChange(value, oldValue) {
         let me                  = this,
-            hash                = value && value.hash,
+            hash                = value?.hash,
             contentTabContainer = me.getReference('content-tabcontainer'),
             structureStore      = me.getReference('api-treelist').store,
             record, tab;
 
-        if (hash && hash.hasOwnProperty('viewSource')) {
+        if (hash?.hasOwnProperty('viewSource')) {
             record = structureStore.find('className', hash.viewSource)[0];
 
             if (record) {
@@ -228,4 +228,4 @@ class MainContainerController extends Component {
 
 Neo.applyClassConfig(MainContainerController);
 
-export {MainContainerController as default};
+export default MainContainerController;

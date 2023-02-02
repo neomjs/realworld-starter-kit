@@ -37,7 +37,6 @@
   color: #fff;
   margin: 5px;
   padding: 10px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }

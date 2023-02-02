@@ -11,7 +11,7 @@ import SearchField             from '../../../../node_modules/neo.mjs/src/form/f
  * @extends Neo.container.Base
  */
 class MainContainer extends Container {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.classdetails.MainContainer'
          * @protected
@@ -121,9 +121,9 @@ class MainContainer extends Container {
             listeners: {mutateItems: 'onMutateItems'},
             reference: 'classdetails-memberslist'
         }]
-    }}
+    }
 }
 
 Neo.applyClassConfig(MainContainer);
 
-export {MainContainer as default};
+export default MainContainer;

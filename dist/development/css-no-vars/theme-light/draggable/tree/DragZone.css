@@ -1,3 +1,6 @@
+.neo-dragproxy.neo-tree-list .neo-list {
+  overflow: hidden;
+}
 .neo-dragproxy.neo-tree-list .neo-list .neo-list-item {
   margin-right: 0;
 }

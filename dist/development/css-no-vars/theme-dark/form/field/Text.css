@@ -1,13 +1,37 @@
 .neo-textfield {
   align-items: center;
   display: flex;
-  height: 27px;
+  height: calc(25px + 1px * 2);
   margin-bottom: 5px;
   margin-top: 5px;
   white-space: nowrap;
 }
 .neo-textfield.neo-focus .neo-input-wrapper {
   border-color: #5d83a7 !important;
+  outline: none;
+}
+.neo-textfield.neo-focus .neo-label-wrapper .neo-textfield-input {
+  border-color: transparent;
+}
+.neo-textfield.neo-focus .neo-textfield-input {
+  border-color: #5d83a7;
+  outline: none;
+}
+.neo-textfield.neo-hovered:not(.neo-textfield.neo-hovered.neo-focus):not(.neo-textfield.neo-hovered:not(.neo-textfield.neo-hovered.neo-focus).label-inline) .neo-input-wrapper {
+  border-color: #424242 !important;
+  outline: none;
+}
+.neo-textfield.neo-hovered:not(.neo-textfield.neo-hovered.neo-focus) .neo-label-wrapper .neo-center-border, .neo-textfield.neo-hovered:not(.neo-textfield.neo-hovered.neo-focus) .neo-label-wrapper .neo-left-border, .neo-textfield.neo-hovered:not(.neo-textfield.neo-hovered.neo-focus) .neo-label-wrapper .neo-right-border {
+  border-bottom-color: #424242;
+}
+.neo-textfield.neo-hovered:not(.neo-textfield.neo-hovered.neo-focus) .neo-label-wrapper .neo-left-border, .neo-textfield.neo-hovered:not(.neo-textfield.neo-hovered.neo-focus) .neo-label-wrapper .neo-right-border {
+  border-top-color: #424242;
+}
+.neo-textfield.neo-hovered:not(.neo-textfield.neo-hovered.neo-focus) .neo-label-wrapper .neo-left-border {
+  border-left-color: #424242;
+}
+.neo-textfield.neo-hovered:not(.neo-textfield.neo-hovered.neo-focus) .neo-label-wrapper .neo-right-border {
+  border-right-color: #424242;
 }
 .neo-textfield.neo-invalid:not(.neo-disabled) .neo-input-wrapper {
   border-color: brown;
@@ -27,15 +51,70 @@
 .neo-textfield.neo-invalid:not(.neo-disabled, .neo-has-content) .neo-label-wrapper .neo-center-border {
   border-top-color: brown;
 }
+.neo-textfield.neo-disabled {
+  opacity: 0.5;
+}
+.neo-textfield.neo-disabled.label-inline .neo-label-wrapper .neo-center-border, .neo-textfield.neo-disabled.label-inline .neo-label-wrapper .neo-left-border, .neo-textfield.neo-disabled.label-inline .neo-label-wrapper .neo-right-border {
+  border-bottom-color: #424242;
+}
+.neo-textfield.neo-disabled.label-inline .neo-label-wrapper .neo-left-border, .neo-textfield.neo-disabled.label-inline .neo-label-wrapper .neo-right-border {
+  border-top-color: #424242;
+}
+.neo-textfield.neo-disabled.label-inline .neo-label-wrapper .neo-left-border {
+  border-left-color: #424242;
+}
+.neo-textfield.neo-disabled.label-inline .neo-label-wrapper .neo-right-border {
+  border-right-color: #424242;
+}
+.neo-textfield.neo-disabled .neo-input-wrapper {
+  background-color: #2b2b2b;
+  border-color: #424242;
+}
+.neo-textfield.neo-disabled .neo-textfield-input {
+  background-color: #2b2b2b;
+  color: #ccc;
+}
+.neo-textfield.neo-disabled .neo-textfield-label {
+  color: #bbb;
+}
+.neo-textfield.neo-readonly {
+  opacity: 1;
+}
+.neo-textfield.neo-readonly.label-inline .neo-label-wrapper .neo-center-border, .neo-textfield.neo-readonly.label-inline .neo-label-wrapper .neo-left-border, .neo-textfield.neo-readonly.label-inline .neo-label-wrapper .neo-right-border {
+  border-bottom-color: #424242;
+}
+.neo-textfield.neo-readonly.label-inline .neo-label-wrapper .neo-left-border, .neo-textfield.neo-readonly.label-inline .neo-label-wrapper .neo-right-border {
+  border-top-color: #424242;
+}
+.neo-textfield.neo-readonly.label-inline .neo-label-wrapper .neo-left-border {
+  border-left-color: #424242;
+}
+.neo-textfield.neo-readonly.label-inline .neo-label-wrapper .neo-right-border {
+  border-right-color: #424242;
+}
+.neo-textfield.neo-readonly .neo-input-wrapper {
+  background-color: #222;
+  border-color: #424242;
+}
+.neo-textfield.neo-readonly .neo-textfield-input {
+  background-color: #222;
+  color: #ccc;
+}
+.neo-textfield.neo-readonly .neo-textfield-label {
+  color: #bbb;
+}
 .neo-textfield.label-bottom {
-  align-items: start;
+  align-items: stretch;
   flex-direction: column-reverse;
+  justify-content: start;
 }
 .neo-textfield.label-bottom .neo-textfield-label {
   margin-top: 3px;
 }
 .neo-textfield.label-inline {
+  display: block;
   font-size: 14px;
+  height: inherit;
   position: relative;
 }
 .neo-textfield.label-inline.neo-focus .neo-label-wrapper .neo-center-border, .neo-textfield.label-inline.neo-focus .neo-label-wrapper .neo-left-border, .neo-textfield.label-inline.neo-focus .neo-label-wrapper .neo-right-border {
@@ -55,14 +134,14 @@
 }
 .neo-textfield.label-inline.neo-focus .neo-textfield-label {
   color: #5d83a7 !important;
-  transform: translateX(4px) translateY(-65%) scale(0.7);
+  transform: translateX(4px) translateY(calc(-62% - 0.5 * 1px)) scale(0.7);
 }
 .neo-textfield.label-inline.neo-has-content .neo-center-border {
   border-top-color: transparent !important;
 }
 .neo-textfield.label-inline.neo-has-content .neo-textfield-label {
   color: #777;
-  transform: translateX(4px) translateY(-65%) scale(0.7);
+  transform: translateX(4px) translateY(calc(-62% - 0.5 * 1px)) scale(0.7);
 }
 .neo-textfield.label-inline .neo-field-trigger {
   z-index: 2;
@@ -72,7 +151,7 @@
 }
 .neo-textfield.label-inline .neo-label-wrapper {
   display: flex;
-  height: 100%;
+  height: calc(25px + 1px * 2);
   position: absolute;
   width: 100%;
 }
@@ -83,13 +162,17 @@
 }
 .neo-textfield.label-inline .neo-label-wrapper .neo-left-border {
   border: 1px solid #424242;
+  border-bottom-left-radius: 0;
   border-right: 0;
+  border-top-left-radius: 0;
   flex: 0 0 auto;
-  width: 12px;
+  width: calc(11px + 1px);
 }
 .neo-textfield.label-inline .neo-label-wrapper .neo-right-border {
   border: 1px solid #424242;
+  border-bottom-right-radius: 0;
   border-left: 0;
+  border-top-right-radius: 0;
   flex: 1 0 auto;
 }
 .neo-textfield.label-inline .neo-textfield-input {
@@ -98,9 +181,6 @@
   margin: 0;
   padding-left: 16px;
   z-index: 1;
-}
-.neo-textfield.label-inline .neo-textfield-input:focus {
-  border-color: transparent;
 }
 .neo-textfield.label-inline .neo-textfield-label {
   margin-top: 4px;
@@ -117,11 +197,11 @@
   text-align: right;
 }
 .neo-textfield.label-top {
-  align-items: start;
+  align-items: stretch;
   flex-direction: column;
 }
 .neo-textfield.label-top .neo-textfield-label {
-  margin-bottom: 3px;
+  margin: 0 0 3px;
 }
 .neo-textfield .neo-input-wrapper {
   align-items: stretch;
@@ -131,7 +211,9 @@
   display: flex;
   flex: 1 1 100px;
   min-height: 25px;
+  outline: 0 solid none;
   overflow: hidden;
+  transition: outline-width 0.1s ease-out;
 }
 .neo-textfield .neo-input-wrapper .neo-textfield-input {
   border: none;
@@ -142,19 +224,25 @@
   min-height: 25px;
   width: 30px;
 }
+.neo-textfield .neo-textfield-error {
+  color: brown;
+  font-size: 11px;
+  margin-top: 0.3em;
+  white-space: break-spaces;
+  word-break: break-word;
+}
 .neo-textfield .neo-textfield-input {
   background-color: #2b2b2b;
   border: 1px solid #424242;
   border-radius: 0;
   color: #ccc;
-  font: 400 13px/17px "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
-  min-height: 27px;
+  font: 400 13px/17px Arial;
+  min-height: 25px;
+  min-width: 50px;
   padding: 3px 6px 2px;
   transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
-  width: 140px;
 }
 .neo-textfield .neo-textfield-input:focus {
-  border-color: #5d83a7;
   outline: none;
 }
 .neo-textfield .neo-textfield-input::-webkit-input-placeholder {
@@ -171,5 +259,19 @@
   color: #bbb;
   display: inline-block;
   flex: 0 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.neo-textfield .neo-textfield-sublabel {
+  color: #999;
+  display: inline-block;
+  flex: 0 0 auto;
+  font-size: 12px;
+  margin: 0 0 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  white-space: break-spaces;
 }
 /*# sourceMappingURL=Text.css.map */

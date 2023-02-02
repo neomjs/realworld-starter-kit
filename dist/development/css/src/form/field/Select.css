@@ -19,6 +19,8 @@
   opacity: var(--selectfield-input-hint-opacity);
 }
 .neo-selectfield .neo-list {
+  overflow-x: hidden;
+  overflow-y: auto;
   text-align: left;
 }
 .neo-selectfield .neo-list .neo-highlight-search {

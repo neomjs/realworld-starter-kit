@@ -1,7 +1,6 @@
 .neo-menu-list {
   border: 1px solid #3c3f41;
   overflow-y: auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }

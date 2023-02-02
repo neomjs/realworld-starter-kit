@@ -1,5 +1,24 @@
-.neo-disabled .neo-button {
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(4);
+  }
+}
+.neo-disabled .neo-button, .neo-disabled.neo-button {
+  background-color: #fff;
+  border-color: #ddd;
   cursor: default;
+  opacity: 0.5;
+}
+.neo-disabled .neo-button .neo-button-glyph, .neo-disabled.neo-button .neo-button-glyph {
+  color: #1c60a0;
+}
+.neo-disabled .neo-button .neo-button-text, .neo-disabled.neo-button .neo-button-text {
+  color: #1c60a0;
 }
 
 .neo-button {
@@ -17,6 +36,7 @@
   padding: 5px 12px 5px 12px;
   position: relative;
   text-decoration: none;
+  transition: outline-width 0.1s ease-out;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -29,11 +49,33 @@
   border-color: #1c60a0;
   color: #1c60a0 !important;
 }
+.neo-button:focus {
+  outline: none;
+}
 .neo-button:hover {
   background-color: #fff;
   background-image: none !important;
   border-color: #1c60a0;
   color: #bbb;
+}
+.neo-button.neo-button-secondary {
+  background-color: #1c60a0;
+  background-image: none;
+}
+.neo-button.neo-button-secondary .neo-button-badge {
+  background-color: #fff;
+  color: #1c60a0;
+}
+.neo-button.neo-button-secondary .neo-button-glyph {
+  color: #fff;
+}
+.neo-button.neo-button-secondary .neo-button-text {
+  color: #fff;
+}
+.neo-button.neo-button-tertiary {
+  background-color: transparent;
+  background-image: none;
+  border-width: 0;
 }
 .neo-button.no-text .neo-button-glyph {
   margin: 0 !important;
@@ -41,11 +83,55 @@
 .neo-button.pressed {
   border-color: #1c60a0;
 }
+.neo-button .neo-button-badge {
+  background-color: #1c60a0;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: auto;
+  padding: 3px;
+  pointer-events: none;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  z-index: 3;
+}
+.neo-button .neo-button-badge.neo-bottom-left {
+  bottom: -10px;
+  left: -10px;
+}
+.neo-button .neo-button-badge.neo-bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+.neo-button .neo-button-badge.neo-top-left {
+  left: -10px;
+  top: -10px;
+}
+.neo-button .neo-button-badge.neo-top-right {
+  right: -10px;
+  top: -10px;
+}
 .neo-button .neo-button-glyph {
   color: #1c60a0;
   font-size: 12px;
   margin: 0 6px 0 0;
   pointer-events: none;
+  z-index: 2;
+}
+.neo-button .neo-button-ripple {
+  background-color: #c6def5;
+  border-radius: 50%;
+  opacity: 0;
+  position: absolute;
+  transform: scale(4);
+}
+.neo-button .neo-button-ripple-wrapper {
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
 }
 .neo-button .neo-button-text {
   color: #1c60a0;
@@ -55,9 +141,7 @@
   line-height: 11px;
   pointer-events: none;
   text-transform: uppercase;
-}
-.neo-button:focus {
-  outline: 0;
+  z-index: 2;
 }
 .neo-button.icon-bottom {
   flex-direction: column-reverse;

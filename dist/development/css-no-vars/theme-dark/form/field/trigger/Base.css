@@ -1,10 +1,12 @@
 .neo-field-trigger {
+  align-items: center;
   border-left: 1px solid #424242;
   color: #bbb;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
   font-size: 14px;
   height: 25px;
+  justify-content: center;
   line-height: 26px;
   text-align: center;
   width: 22px;

@@ -8,7 +8,6 @@
   flex: none;
   left: 0;
   margin-top: -1px;
-  position: -webkit-sticky;
   position: sticky;
   width: 50px;
   z-index: 150;
@@ -19,6 +18,9 @@
   display: flex;
   font-size: 0.625em;
   justify-content: center;
+}
+.neo-calendar-timeaxis .neo-c-w-timeaxis-item > div {
+  height: 1em;
 }
 
 .neo-timeaxis-end .neo-calendar-timeaxis {

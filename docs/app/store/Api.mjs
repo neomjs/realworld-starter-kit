@@ -6,7 +6,7 @@ import Store    from '../../../node_modules/neo.mjs/src/data/Store.mjs';
  * @extends Neo.data.Store
  */
 class Api extends Store {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.app.store.Api'
          * @protected
@@ -20,9 +20,9 @@ class Api extends Store {
          * @member {Neo.data.Model} model=ApiModel
          */
         model: ApiModel
-    }}
+    }
 }
 
 Neo.applyClassConfig(Api);
 
-export {Api as default};
+export default Api;

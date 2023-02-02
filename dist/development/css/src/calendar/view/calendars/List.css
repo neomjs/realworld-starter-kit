@@ -2,35 +2,30 @@
   align-items: center;
   display: flex;
 }
-.neo-calendars-list .neo-checkboxfield .neo-checkbox-input:checked::after {
-  content: "\f14a";
-  font-weight: 600;
-}
-.neo-calendars-list .neo-checkboxfield .neo-checkbox-input::after {
-  content: "\f0c8";
+.neo-calendars-list .neo-checkboxfield .neo-checkbox-icon {
   font-size: 20px;
-  font-weight: 600;
+  margin: 2px;
   transition: color 0.15s ease-out;
 }
 .neo-calendars-list .neo-checkboxfield .neo-checkbox-value-label {
   cursor: pointer;
 }
-.neo-calendars-list .neo-color-blue .neo-checkbox-input::after {
+.neo-calendars-list .neo-color-blue .neo-checkbox-icon {
   color: var(--event-blue-color) !important;
 }
-.neo-calendars-list .neo-color-green .neo-checkbox-input::after {
+.neo-calendars-list .neo-color-green .neo-checkbox-icon {
   color: var(--event-green-color) !important;
 }
-.neo-calendars-list .neo-color-orange .neo-checkbox-input::after {
+.neo-calendars-list .neo-color-orange .neo-checkbox-icon {
   color: var(--event-orange-color) !important;
 }
-.neo-calendars-list .neo-color-pink .neo-checkbox-input::after {
+.neo-calendars-list .neo-color-pink .neo-checkbox-icon {
   color: var(--event-pink-color) !important;
 }
-.neo-calendars-list .neo-color-red .neo-checkbox-input::after {
+.neo-calendars-list .neo-color-red .neo-checkbox-icon {
   color: var(--event-red-color) !important;
 }
-.neo-calendars-list .neo-color-yellow .neo-checkbox-input::after {
+.neo-calendars-list .neo-color-yellow .neo-checkbox-icon {
   color: var(--event-yellow-border-color) !important;
 }
 .neo-calendars-list .neo-list-item {

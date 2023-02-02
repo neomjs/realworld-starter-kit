@@ -1,17 +1,19 @@
 .neo-field-trigger {
-  border-left: 1px solid var(--textfield-border-color);
+  align-items: center;
+  border-left: var(--trigger-border-width) solid var(--textfield-border-color);
   color: var(--trigger-color);
   cursor: pointer;
-  display: inline-block;
+  display: flex;
   font-size: 14px;
-  height: 25px;
+  height: var(--textfield-input-height);
+  justify-content: center;
   line-height: 26px;
   text-align: center;
   width: 22px;
 }
 .neo-field-trigger.neo-align-start {
   border-left: 0;
-  border-right: 1px solid var(--textfield-border-color);
+  border-right: var(--trigger-border-width) solid var(--textfield-border-color);
 }
 .neo-field-trigger:hover {
   background-color: var(--trigger-background-color-hover);

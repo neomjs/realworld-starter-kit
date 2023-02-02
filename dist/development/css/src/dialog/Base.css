@@ -34,7 +34,9 @@
 
 .neo-dialog {
   border: 1px solid var(--dialog-border-color);
+  display: flex;
   flex: 1 0 auto;
+  flex-direction: column;
   position: relative;
 }
 .neo-dialog.neo-panel .neo-footer-toolbar {

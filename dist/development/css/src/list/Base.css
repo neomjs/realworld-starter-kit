@@ -1,7 +1,8 @@
-.neo-list-container {
+.neo-list-wrapper {
   background-color: var(--list-container-background-color);
   border: var(--list-container-border);
-  overflow: auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .neo-list {
@@ -17,6 +18,7 @@
           margin-inline-end: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+  overflow: auto;
 }
 .neo-list.neo-use-checkicons .neo-list-item:before {
   color: var(--list-item-glyph-color);
@@ -29,21 +31,34 @@
   content: "\f00c";
   font-weight: 900;
 }
+.neo-list.neo-use-wrapper-node {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.neo-list .neo-list-header {
+  position: sticky;
+  top: 0;
+}
 .neo-list .neo-list-item {
   background-color: var(--list-item-background-color);
-  cursor: pointer;
   padding: var(--list-item-padding);
   white-space: nowrap;
 }
 .neo-list .neo-list-item:focus {
   outline: 0;
 }
-.neo-list .neo-list-item:hover {
+.neo-list .neo-list-item:not(.neo-list-header) {
+  cursor: pointer;
+}
+.neo-list .neo-list-item:not(.neo-list-header):hover {
   background-color: var(--list-item-background-color-hover);
+  color: var(--list-container-list-color);
 }
 .neo-list .neo-list-item.neo-selected {
-  background-color: var(--list-item-background-color-selected);
-  color: var(--list-item-color-selected);
+  background-color: var(--list-item-background-color-selected) !important;
+  color: var(--list-item-color-selected) !important;
+  cursor: default !important;
 }
 .neo-list .neo-list-item .neo-highlight-search {
   color: var(--list-item-highlight-search-color);

@@ -1,8 +1,7 @@
 .neo-split-button {
-  border: var(--button-border);
+  border: var(--button-border-width) solid var(--button-border-color);
   border-radius: var(--button-border-radius);
   display: flex;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -12,6 +11,6 @@
   padding: 0.5em;
 }
 .neo-split-button .neo-button:last-child {
-  border-left: var(--button-border);
+  border-left: var(--button-border-width) solid var(--button-border-color);
 }
 /*# sourceMappingURL=Split.css.map */

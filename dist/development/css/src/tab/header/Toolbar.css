@@ -43,7 +43,6 @@
   width: var(--tab-strip-height);
 }
 .neo-tab-header-toolbar.neo-no-animation .neo-tab-button-indicator {
-  -webkit-animation-duration: 0ms !important;
-          animation-duration: 0ms !important;
+  animation-duration: 0ms !important;
 }
 /*# sourceMappingURL=Toolbar.css.map */

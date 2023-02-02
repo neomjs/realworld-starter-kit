@@ -1,6 +1,6 @@
 {
     "name": "neo.mjs-realworld-example-app",
-    "version": "1.0.28",
+    "version": "1.0.29",
     "description": "neo.mjs: Real World example app",
     "type": "module",
     "repository": {
@@ -29,7 +29,7 @@
     },
     "homepage": "https://neomjs.github.io/pages/",
     "dependencies": {
-        "neo.mjs": "^4.0.66"
+        "neo.mjs": "^5.1.1"
     },
     "devDependencies": {
         "siesta-lite": "5.5.2"

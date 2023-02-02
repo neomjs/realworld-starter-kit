@@ -6,7 +6,7 @@ import TreeList      from '../../../node_modules/neo.mjs/src/tree/List.mjs';
  * @extends Neo.tree.List
  */
 class ExamplesTreeList extends TreeList {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.ExamplesTreeList'
          * @protected
@@ -31,7 +31,7 @@ class ExamplesTreeList extends TreeList {
          * @protected
          */
         store: ExamplesStore
-    }}
+    }
 
     /**
      *
@@ -44,17 +44,13 @@ class ExamplesTreeList extends TreeList {
         Neo.Xhr.promiseJson({
             url: '../../docs/examples.json'
         }).then(data => {
-            let vdom     = me.vdom,
-                itemRoot = me.getListItemsRoot();
-
             me.store.data = data.json;
-            itemRoot = me.createItems(null, itemRoot, 0);
-
-            me.vdom = vdom;
+            me.createItems(null, me.getListItemsRoot(), 0);
+            me.update();
         });
     }
 }
 
 Neo.applyClassConfig(ExamplesTreeList);
 
-export {ExamplesTreeList as default};
+export default ExamplesTreeList;

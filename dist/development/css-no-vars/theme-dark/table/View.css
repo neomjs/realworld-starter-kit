@@ -34,16 +34,16 @@
 .neo-selection-cellcolumnmodel .neo-table-row:focus,
 .neo-selection-cellcolumnrowmodel .neo-table-row:focus,
 .neo-selection-cellmodel .neo-table-row:focus,
-.neo-selection-columnmodel .neo-table-row:focus,
 .neo-selection-cellrowmodel .neo-table-row:focus,
+.neo-selection-columnmodel .neo-table-row:focus,
 .neo-selection-rowmodel .neo-table-row:focus {
   outline: 0;
 }
 .neo-selection-cellcolumnmodel .neo-table-row .neo-table-cell:focus,
 .neo-selection-cellcolumnrowmodel .neo-table-row .neo-table-cell:focus,
 .neo-selection-cellmodel .neo-table-row .neo-table-cell:focus,
-.neo-selection-columnmodel .neo-table-row .neo-table-cell:focus,
 .neo-selection-cellrowmodel .neo-table-row .neo-table-cell:focus,
+.neo-selection-columnmodel .neo-table-row .neo-table-cell:focus,
 .neo-selection-rowmodel .neo-table-row .neo-table-cell:focus {
   outline: 0;
 }

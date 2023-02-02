@@ -5,7 +5,7 @@ import Component from '../../../../node_modules/neo.mjs/src/component/Base.mjs';
  * @extends Neo.component.Base
  */
 class TutorialComponent extends Component {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.classdetails.TutorialComponent'
          * @protected
@@ -34,14 +34,14 @@ class TutorialComponent extends Component {
         style: {
             overflow: 'auto'
         }
-    }}
+    }
 
     /**
      *
      * @param {Object} config
      */
-    constructor(config) {
-        super(config);
+    construct(config) {
+        super.construct(config);
 
         let me     = this,
             isJson = me.fileType === 'json',
@@ -61,16 +61,15 @@ class TutorialComponent extends Component {
      * @param {Object} data
      */
     applySourceCode(data) {
-        let me   = this,
-            vdom = me.vdom;
+        let me = this;
 
         if (me.fileType === 'json') {
-            vdom.cn = data;
+            me.vdom.cn = data;
         } else {
-            vdom.innerHTML = data;
+            me.vdom.innerHTML = data;
         }
 
-        me.vdom = vdom;
+        me.update();
 
         setTimeout(() => {
             TutorialComponent.syntaxHighlight();
@@ -87,4 +86,4 @@ class TutorialComponent extends Component {
 
 Neo.applyClassConfig(TutorialComponent);
 
-export {TutorialComponent as default};
+export default TutorialComponent;

@@ -15,7 +15,7 @@ import Viewport                from '../../../node_modules/neo.mjs/src/container
  * @extends Neo.container.Viewport
  */
 class MainContainer extends Viewport {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.MainContainer'
          * @protected
@@ -95,14 +95,14 @@ class MainContainer extends Viewport {
                 reference: 'content-tabcontainer'
             }]
         }]
-    }}
+    }
 
     /**
      *
      * @param {Object} config
      */
-    constructor(config) {
-        super(config);
+    construct(config) {
+        super.construct(config);
 
         let me = this;
 
@@ -134,4 +134,4 @@ class MainContainer extends Viewport {
 
 Neo.applyClassConfig(MainContainer);
 
-export {MainContainer as default};
+export default MainContainer;

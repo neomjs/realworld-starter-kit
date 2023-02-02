@@ -6,7 +6,7 @@ import NeoArray from '../../../../node_modules/neo.mjs/src/util/Array.mjs';
  * @extends Neo.tree.List
  */
 class HierarchyTreeList extends TreeList {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.classdetails.HierarchyTreeList'
          * @protected
@@ -34,7 +34,7 @@ class HierarchyTreeList extends TreeList {
          * @member {Object|null} structureData=null
          */
         structureData: null
-    }}
+    }
 
     /**
      *
@@ -67,7 +67,7 @@ class HierarchyTreeList extends TreeList {
 
         tmpItems.unshift(item);
 
-        while (item && item.hasOwnProperty('augments')) {
+        while (item?.hasOwnProperty('augments')) {
             item = mainStore.find({
                 $kind       : 'class',
                 neoClassName: item.augments[0]
@@ -100,14 +100,13 @@ class HierarchyTreeList extends TreeList {
     onLeafItemClick(record) {
         let me       = this,
             vnodeId  = me.getItemId(record.id),
-            vdom     = me.vdom,
             vdomNode = me.getVdomChild(vnodeId);
 
         NeoArray[record.checked ? 'add' : 'remove'](vdomNode.cls, 'unchecked');
 
         record.checked = !record.checked;
 
-        me.vdom = vdom;
+        me.update();
 
         me.fire('refreshClassMembers');
     }
@@ -115,4 +114,4 @@ class HierarchyTreeList extends TreeList {
 
 Neo.applyClassConfig(HierarchyTreeList);
 
-export {HierarchyTreeList as default};
+export default HierarchyTreeList;

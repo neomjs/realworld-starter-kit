@@ -5,7 +5,7 @@ import Model  from '../../../node_modules/neo.mjs/src/data/Model.mjs';
  * @extends Neo.data.Model
  */
 class Example extends Model {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.app.model.Example'
          * @protected
@@ -33,9 +33,9 @@ class Example extends Model {
             name: 'path',
             type: 'String'
         }]
-    }}
+    }
 }
 
 Neo.applyClassConfig(Example);
 
-export {Example as default};
+export default Example;

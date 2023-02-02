@@ -19,6 +19,8 @@
   opacity: 0.6;
 }
 .neo-selectfield .neo-list {
+  overflow-x: hidden;
+  overflow-y: auto;
   text-align: left;
 }
 .neo-selectfield .neo-list .neo-highlight-search {
@@ -29,7 +31,7 @@
   color: #000 !important;
 }
 .neo-selectfield .neo-picker-container {
-  border: none;
+  border: 1px solid #bbb;
   border-radius: 0;
   font-weight: 400;
 }

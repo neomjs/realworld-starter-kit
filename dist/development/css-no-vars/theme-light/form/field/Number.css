@@ -10,18 +10,21 @@
 }
 .neo-numberfield .neo-input-wrapper .neo-field-trigger.neo-spin-buttons {
   border-left: 0;
+  flex-direction: column;
 }
 .neo-numberfield .neo-input-wrapper .neo-field-trigger.neo-spin-buttons:hover {
   background-color: inherit;
   color: inherit;
 }
 .neo-numberfield .neo-spin-button {
+  align-items: center;
   border-left: 1px solid #ddd;
   color: #bbb;
   cursor: pointer;
-  display: block;
+  display: flex;
   font-size: 10px;
   height: 50%;
+  justify-content: center;
   line-height: 11px;
   text-align: center;
   width: 22px;

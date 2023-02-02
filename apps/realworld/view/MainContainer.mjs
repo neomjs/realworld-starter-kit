@@ -8,20 +8,16 @@ import Viewport                from '../../../node_modules/neo.mjs/src/container
  * @extends Neo.container.Viewport
  */
 class MainContainer extends Viewport {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='RealWorld.view.MainContainer'
          * @protected
          */
         className: 'RealWorld.view.MainContainer',
         /**
-         * @member {Boolean} autoMount=true
+         * @member {String[]} baseCls=[]
          */
-        autoMount: true,
-        /**
-         * @member {Array} cls=[]
-         */
-        cls: [],
+        baseCls: [],
         /**
          * @member {Neo.controller.Component} controller=MainContainerController
          */
@@ -37,7 +33,7 @@ class MainContainer extends Viewport {
         }, {
             module: FooterComponent
         }]
-    }}
+    }
 }
 
 Neo.applyClassConfig(MainContainer);

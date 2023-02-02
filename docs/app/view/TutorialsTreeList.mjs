@@ -6,7 +6,7 @@ import TutorialsStore from '../store/Tutorials.mjs';
  * @extends Neo.tree.List
  */
 class TutorialsTreeList extends TreeList {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.TutorialsTreeList'
          * @protected
@@ -31,7 +31,7 @@ class TutorialsTreeList extends TreeList {
          * @protected
          */
         store: TutorialsStore
-    }}
+    }
 
     /**
      *
@@ -44,17 +44,13 @@ class TutorialsTreeList extends TreeList {
         Neo.Xhr.promiseJson({
             url: '../../docs/tutorials/tutorials.json'
         }).then(data => {
-            let vdom     = me.vdom,
-                itemRoot = me.getListItemsRoot();
-
             me.store.data = data.json;
-            itemRoot = me.createItems(null, itemRoot, 0);
-
-            me.vdom = vdom;
+            me.createItems(null, me.getListItemsRoot(), 0);
+            me.update();
         });
     }
 }
 
 Neo.applyClassConfig(TutorialsTreeList);
 
-export {TutorialsTreeList as default};
+export default TutorialsTreeList;

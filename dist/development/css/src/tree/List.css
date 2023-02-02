@@ -2,7 +2,16 @@
   border: none;
   color: var(--tree-list-color);
   display: flex;
+  overflow: hidden;
   position: relative;
+}
+.neo-tree-list .neo-list {
+  overflow: visible;
+}
+.neo-tree-list .neo-list-container {
+  background-color: var(--list-container-background-color);
+  border: var(--list-container-border);
+  overflow: auto;
 }
 .neo-tree-list .neo-list-folder + .neo-list {
   display: none;

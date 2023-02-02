@@ -1,5 +1,8 @@
 :root .neo-theme-dark {
   --checkboxfield-color: #eee;
-  --checkboxfield-checked-color: #64B5F6;
+  --checkboxfield-color-checked: #64B5F6;
+  --checkboxfield-icon-font-family: "Font Awesome 5 Free";
+  --checkboxfield-icon-font-size: 14px;
+  --checkboxfield-label-top-margin: 0 0 3px;
 }
 /*# sourceMappingURL=CheckBox.css.map */

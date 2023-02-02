@@ -2,11 +2,10 @@
   display: flex;
   align-items: stretch;
 }
-
-.neo-layout-card-item {
+.neo-layout-card > * {
   flex: 1 0 100%;
 }
-.neo-layout-card-item.inactive-item {
+.neo-layout-card > *.neo-inactive-item {
   display: none !important;
 }
 /*# sourceMappingURL=Card.css.map */

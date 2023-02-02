@@ -6,7 +6,7 @@ import HeaderButton from '../../../node_modules/neo.mjs/src/tab/header/Button.mj
  * @extends Neo.tab.Container
  */
 class ContentTabContainer extends Container {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.ContentTabContainer'
          * @protected
@@ -58,14 +58,14 @@ class ContentTabContainer extends Container {
          * @member {Boolean} sortable=true
          */
         sortable: true
-    }}
+    }
 
     /**
      *
      * @param {Object} config
      */
-    constructor(config) {
-        super(config);
+    construct(config) {
+        super.construct(config);
 
         let me  = this,
             cls = me.cls;
@@ -110,4 +110,4 @@ class ContentTabContainer extends Container {
 
 Neo.applyClassConfig(ContentTabContainer);
 
-export {ContentTabContainer as default};
+export default ContentTabContainer;

@@ -126,7 +126,7 @@
   min-height: 30px;
 }
 .neo-dateselector .neo-dateselector-header .neo-center-region {
-  align-items: center;
+  align-items: stretch;
   display: flex;
   flex: 1 1 auto;
   justify-content: center;
@@ -137,13 +137,13 @@
   display: flex;
   flex: 1;
   font-weight: bold;
-  height: 1em;
   justify-content: end;
 }
 .neo-dateselector .neo-dateselector-header .neo-center-region .neo-year-text {
+  align-items: center;
   color: #bbb;
+  display: flex;
   flex: 1;
-  height: 1em;
   margin-left: 0.25em;
 }
 .neo-dateselector .neo-dateselector-header .neo-nav-button {

@@ -6,7 +6,7 @@ import Collection from '../../../../node_modules/neo.mjs/src/collection/Base.mjs
  * @extends Neo.list.Base
  */
 class MembersList extends Base {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.classdetails.MembersList'
          * @protected
@@ -49,10 +49,9 @@ class MembersList extends Base {
         /**
          * @member {Object} _vdom={cn: []}
          */
-        _vdom: {
-            cn: []
-        }
-    }}
+        _vdom:
+        {cn: []}
+    }
 
     /**
      *
@@ -84,9 +83,7 @@ class MembersList extends Base {
      * @protected
      */
     afterSetFilterMembersQuery(value, oldValue) {
-        if (oldValue !== undefined) {
-            this.onRefreshClassMembers();
-        }
+        oldValue !== undefined && this.onRefreshClassMembers();
     }
 
     /**
@@ -96,9 +93,7 @@ class MembersList extends Base {
      * @protected
      */
     afterSetShowProtectedMembers(value, oldValue) {
-        if (oldValue !== undefined) {
-            this.onRefreshClassMembers();
-        }
+        oldValue !== undefined && this.onRefreshClassMembers();
     }
 
     /**
@@ -108,9 +103,7 @@ class MembersList extends Base {
      * @protected
      */
     afterSetShowPrivateMembers(value, oldValue) {
-        if (oldValue !== undefined) {
-            this.onRefreshClassMembers();
-        }
+        oldValue !== undefined && this.onRefreshClassMembers();
     }
 
     /**
@@ -120,9 +113,7 @@ class MembersList extends Base {
      * @protected
      */
     afterSetShowStaticMembers(value, oldValue) {
-        if (oldValue !== undefined) {
-            this.onRefreshClassMembers();
-        }
+        oldValue !== undefined && this.onRefreshClassMembers();
     }
 
     /**
@@ -132,7 +123,7 @@ class MembersList extends Base {
      * @returns {Object} vdom
      */
     applyConfigsHeader(store, vdom) {
-        if (store.items[0] && store.items[0].kind === 'member') {
+        if (store.items[0]?.kind === 'member') {
             vdom.cn.push({
                 // scrolling placeholder
             }, {
@@ -156,8 +147,7 @@ class MembersList extends Base {
     applyEventsHeader(item, index, store, vdom) {
         if (
             item.kind === 'event' &&
-            store.items[index -1] &&
-            store.items[index -1].kind !== 'event'
+            store.items[index -1]?.kind !== 'event'
         ) {
             vdom.cn.push({
                 // scrolling placeholder
@@ -185,8 +175,7 @@ class MembersList extends Base {
             item.kind === 'function' &&
             (
                 !store.items[index -1] || (
-                    store.items[index -1] &&
-                    store.items[index -1].kind !== 'function'
+                    store.items[index -1]?.kind !== 'function'
                 )
             )
         ) {
@@ -247,7 +236,7 @@ class MembersList extends Base {
             }
 
             // configs
-            if (item.type && item.type.names) {
+            if (item.type?.names) {
                 headerText += (': {' + MembersList.escapeHtml(item.type.names.join('|')) + '}');
             }
 
@@ -311,7 +300,7 @@ class MembersList extends Base {
                 }]
             };
 
-            if (item.examples && item.examples.length > 0) {
+            if (item.examples?.length > 0) {
                 hasExamples = true;
 
                 item.examples.forEach(example => {
@@ -325,7 +314,7 @@ class MembersList extends Base {
                 });
             }
 
-            if (item.params && item.params.length > 0) {
+            if (item.params?.length > 0) {
                 itemConfig.cn.push(MembersList.createParametersTable(item.params));
             }
 
@@ -338,13 +327,11 @@ class MembersList extends Base {
             vdom.cn.push(itemConfig);
         });
 
-        me.vdom = vdom;
+        me.update();
 
-        if (hasExamples) {
-            setTimeout(() => {
-                Neo.main.addon.HighlightJS.syntaxHighlightInit();
-            }, 100);
-        }
+        hasExamples && setTimeout(() => {
+            Neo.main.addon.HighlightJS.syntaxHighlightInit();
+        }, 100);
     }
 
     /**
@@ -550,8 +537,10 @@ class MembersList extends Base {
 
         filters.push({
             scope   : me,
-            filterBy: function(item, filteredItems, allItems) {
+            filterBy: function(opts) {
                 let me              = this,
+                    filteredItems   = opts.filteredItems,
+                    item            = opts.item,
                     targetClassName = me.targetClassName,
                     filteredItem, i, len;
 
@@ -618,4 +607,4 @@ class MembersList extends Base {
 
 Neo.applyClassConfig(MembersList);
 
-export {MembersList as default};
+export default MembersList;

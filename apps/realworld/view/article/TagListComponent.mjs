@@ -5,16 +5,14 @@ import Component from '../../../../node_modules/neo.mjs/src/component/Base.mjs';
  * @extends Neo.component.Base
  */
 class TagListComponent extends Component {
-    static getStaticConfig() {return {
-        /**
-         * True automatically applies the core.Observable mixin
-         * @member {Boolean} observable=true
-         * @static
-         */
-        observable: true
-    }}
+    /**
+     * True automatically applies the core.Observable mixin
+     * @member {Boolean} observable=true
+     * @static
+     */
+    static observable = true
 
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='RealWorld.view.article.TagListComponent'
          * @protected
@@ -25,9 +23,9 @@ class TagListComponent extends Component {
          */
         activeTag_: null,
         /**
-         * @member {String[]} cls=['col-md-3']
+         * @member {String[]} baseCls=['col-md-3']
          */
-        cls: ['col-md-3'],
+        baseCls: ['col-md-3'],
         /**
          * @member {String[]} tags_=[]
          */
@@ -42,7 +40,7 @@ class TagListComponent extends Component {
                 {cls: ['tag-list']}
             ]}
         ]}
-    }}
+    }
 
     /**
      * @param {Object} config
@@ -55,18 +53,15 @@ class TagListComponent extends Component {
             cls : 'tag-pill'
         });
 
-        let me           = this,
-            domListeners = me.domListeners;
+        let me = this;
 
-        domListeners.push({
+        me.addDomListeners({
             click: {
                 fn      : me.onTagLinkClick,
                 delegate: '.tag-pill',
                 scope   : me
             }
         });
-
-        me.domListeners = domListeners;
     }
 
     /**
@@ -78,8 +73,8 @@ class TagListComponent extends Component {
     afterSetActiveTag(value, oldValue) {
         if (oldValue !== undefined) {
             this.fire('tagChange', {
-                oldValue: oldValue,
-                value   : value
+                oldValue,
+                value
             });
         }
     }
@@ -91,14 +86,13 @@ class TagListComponent extends Component {
      * @protected
      */
     afterSetTags(value, oldValue) {
-        let me   = this,
-            vdom = me.vdom;
+        let me = this;
 
-        vdom.cn[0].cn[1].cn = [];
+        me.vdom.cn[0].cn[1].cn = [];
 
         if (Array.isArray(value)) {
             value.forEach(item => {
-                vdom.cn[0].cn[1].cn.push({
+                me.vdom.cn[0].cn[1].cn.push({
                     tag : 'a',
                     cls : ['tag-pill', 'tag-default'],
                     href: '',
@@ -107,7 +101,7 @@ class TagListComponent extends Component {
                 });
             });
 
-            me.vdom = vdom;
+            me.update();
         }
     }
 

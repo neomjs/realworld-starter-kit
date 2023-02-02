@@ -7,7 +7,7 @@ import SearchField from '../../../node_modules/neo.mjs/src/form/field/Search.mjs
  * @extends Neo.container.Base
  */
 class HeaderContainer extends Container {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.view.HeaderContainer'
          * @protected
@@ -64,9 +64,9 @@ class HeaderContainer extends Container {
             html : 'neo.mjs docs',
             width: 210
         }]
-    }}
+    }
 }
 
 Neo.applyClassConfig(HeaderContainer);
 
-export {HeaderContainer as default};
+export default HeaderContainer;

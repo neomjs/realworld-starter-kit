@@ -24,6 +24,10 @@ html, .neo-body-viewport {
   pointer-events: none;
 }
 
+.neo-hidden {
+  visibility: hidden;
+}
+
 .neo-link-color {
   color: #bbb;
 }

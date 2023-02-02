@@ -13,6 +13,34 @@
 .neo-toolbar.neo-dock-left .neo-button.icon-left .neo-button-glyph {
   margin: 10px 0 0 0;
 }
+.neo-toolbar.neo-dock-left .neo-button-badge {
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+}
+.neo-toolbar.neo-dock-left .neo-button-badge.neo-bottom-left {
+  bottom: -10px;
+  left: unset;
+  right: -10px;
+  top: unset;
+}
+.neo-toolbar.neo-dock-left .neo-button-badge.neo-bottom-right {
+  bottom: unset;
+  left: unset;
+  right: -10px;
+  top: -10px;
+}
+.neo-toolbar.neo-dock-left .neo-button-badge.neo-top-left {
+  bottom: -10px;
+  left: -10px;
+  right: unset;
+  top: unset;
+}
+.neo-toolbar.neo-dock-left .neo-button-badge.neo-top-right {
+  bottom: unset;
+  left: -10px;
+  right: unset;
+  top: -10px;
+}
 .neo-toolbar.neo-dock-left .neo-button-glyph {
   transform: rotate(-90deg);
 }
@@ -34,6 +62,33 @@
 }
 .neo-toolbar.neo-dock-right .neo-button.icon-left .neo-button-glyph {
   margin: 0 0 10px 0;
+}
+.neo-toolbar.neo-dock-right .neo-button-badge {
+  writing-mode: vertical-lr;
+}
+.neo-toolbar.neo-dock-right .neo-button-badge.neo-bottom-left {
+  bottom: unset;
+  left: -10px;
+  right: unset;
+  top: -10px;
+}
+.neo-toolbar.neo-dock-right .neo-button-badge.neo-bottom-right {
+  bottom: -10px;
+  left: -10px;
+  right: unset;
+  top: unset;
+}
+.neo-toolbar.neo-dock-right .neo-button-badge.neo-top-left {
+  bottom: unset;
+  left: unset;
+  right: -10px;
+  top: -10px;
+}
+.neo-toolbar.neo-dock-right .neo-button-badge.neo-top-right {
+  bottom: -10px;
+  left: unset;
+  right: -10px;
+  top: unset;
 }
 .neo-toolbar.neo-dock-right .neo-button-glyph {
   transform: rotate(90deg);

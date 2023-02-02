@@ -6,7 +6,7 @@ import Store   from '../../../node_modules/neo.mjs/src/data/Store.mjs';
  * @extends Neo.data.Store
  */
 class Examples extends Store {
-    static getConfig() {return {
+    static config = {
         /**
          * @member {String} className='Docs.app.store.Examples'
          * @protected
@@ -20,9 +20,9 @@ class Examples extends Store {
          * @member {Neo.data.Model} model=Example
          */
         model: Example
-    }}
+    }
 }
 
 Neo.applyClassConfig(Examples);
 
-export {Examples as default};
+export default Examples;

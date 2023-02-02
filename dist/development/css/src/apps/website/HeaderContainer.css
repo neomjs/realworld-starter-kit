@@ -55,6 +55,7 @@
   transition: font-size var(--website-transition-duration) ease-out;
 }
 .website-header-container .website-header-buttons {
+  background-color: transparent;
   position: absolute;
   right: 0;
   top: 0;

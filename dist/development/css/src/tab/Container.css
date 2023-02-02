@@ -1,6 +1,3 @@
-.neo-tab-container {
-  overflow: hidden;
-}
 .neo-tab-container.neo-bottom > .neo-tab-content-container {
   border-bottom: 0;
 }
@@ -16,6 +13,7 @@
 
 .neo-tab-content-container {
   border: var(--tab-container-content-border);
+  overflow: hidden;
 }
 
 .neo-tab-header-toolbar {
